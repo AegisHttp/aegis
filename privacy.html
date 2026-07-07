@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Aegis HTTP GPG Login</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --text-color: #e2e8f0;
+            --accent-color: #3b82f6;
+            --container-bg: #151922;
+            --border-color: #242b3d;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-top: 0;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p, li {
+            color: #94a3b8;
+            font-size: 1.05rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .highlight-box {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 4px;
+            margin: 25px 0;
+        }
+
+        .highlight-box p {
+            color: #cbd5e1;
+            margin: 0;
+        }
+
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            font-size: 0.9rem;
+            text-align: center;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p><strong>Last Updated: July 8, 2026</strong></p>
+
+        <p>This privacy policy governs your use of the <strong>Aegis HTTP GPG Login</strong> web browser extension (available for Chromium-based browsers and Mozilla Firefox).</p>
+
+        <div class="highlight-box">
+            <p><strong>Core Privacy Principle:</strong> Aegis HTTP GPG Login collects, stores, transmits, or shares absolutely <strong>zero user data</strong>. All cryptographic operations are processed entirely on your local machine.</p>
+        </div>
+
+        <h2>1. Data Collection and Transmission</h2>
+        <p>Aegis HTTP GPG Login does not collect any personal information, browsing history, authentication credentials, or private GPG keys. Specifically:</p>
+        <ul>
+            <li><strong>No Remote Servers:</strong> The extension does not communicate with any external backend servers or analytics platforms owned by the developers.</li>
+            <li><strong>Local GPG Processing:</strong> All cryptographic actions (signing login challenges, decrypting responses, encrypting requests) are forwarded to your local GPG binary on your operating system via the secure Chrome Native Messaging API.</li>
+            <li><strong>Zero Key Access:</strong> The extension never has access to your GPG private keys. Your GPG private keys remain locked securely within your OS keyring and are managed solely by your system's GnuPG agent.</li>
+        </ul>
+
+        <h2>2. Permissions Used</h2>
+        <p>To provide its functionality, the extension requires the following permissions:</p>
+        <ul>
+            <li><strong>nativeMessaging:</strong> Needed to communicate with the locally installed <code>aegis-host</code> bridge daemon to invoke GPG commands locally.</li>
+            <li><strong>host_permissions (all URLs):</strong> Required to inject cryptographic integration scripts into web pages requesting secure Aegis HTTP gateway handshakes. No data from these pages is sent to third parties.</li>
+        </ul>
+
+        <h2>3. Third-Party Websites</h2>
+        <p>Aegis HTTP GPG Login is used to facilitate authentication with external web applications that support Aegis HTTP. We are not responsible for the privacy practices or content of these third-party web applications. Please check their respective privacy policies before authenticating.</p>
+
+        <h2>4. Changes to This Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page. Your continued use of the extension following the posting of changes constitutes your acceptance of such changes.</p>
+
+        <h2>5. Contact Us</h2>
+        <p>If you have any questions or feedback regarding this Privacy Policy, please open an issue on our GitHub repository: <a href="https://github.com/aegis-http/aegis-http" target="_blank">github.com/aegis-http/aegis-http</a>.</p>
+
+        <div class="footer">
+            Aegis HTTP GPG Login Project &copy; 2026. Distributed under the AGPL-3.0 License.
+        </div>
+    </div>
+</body>
+</html>
