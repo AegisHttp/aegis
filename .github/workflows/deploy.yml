@@ -41,9 +41,9 @@ jobs:
       - name: Minify Assets
         run: |
           # Minify style.css in-place
-          cleancss -o aegis/assets/style.css aegis/assets/style.css
+          cleancss -o assets/style.css assets/style.css
           # Minify app.js in-place
-          terser aegis/assets/app.js -o aegis/assets/app.js --compress --mangle
+          terser assets/app.js -o assets/app.js --compress --mangle
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
