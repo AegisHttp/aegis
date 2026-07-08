@@ -653,13 +653,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // 12. Click Install -> Installing state in store
     { time: 13500, action: () => { clickCursor(); const btnUbuntu = document.getElementById('btn-ubuntu-install-sim'); const track = document.getElementById('ubuntu-progress-track'); if (btnUbuntu) { btnUbuntu.textContent = pageLang === 'tr' ? "Yükleniyor..." : "Installing..."; btnUbuntu.classList.add('installing'); btnUbuntu.style.background = "#5e2750"; } if (track) track.style.display = "block"; } },
     // APT commands and Software Center progress updates in parallel
-    { time: 14000, action: () => writeTerminalLineImmediate("user@aegis:~$ sudo apt install aegis-native-host") },
+    { time: 14000, action: () => writeTerminalLineImmediate("user@aegis:~$ sudo apt install aegis-host") },
     { time: 14500, action: () => { const bar = document.getElementById('ubuntu-progress-bar'); if (bar) bar.style.width = "25%"; } },
     { time: 15200, action: () => writeTerminalLineImmediate("[sudo] password for user: ••••") },
     { time: 16000, action: () => { const bar = document.getElementById('ubuntu-progress-bar'); if (bar) bar.style.width = "50%"; } },
     { time: 16800, action: () => writeTerminalLineImmediate("Reading package lists... Done") },
     { time: 17500, action: () => { writeTerminalLineImmediate("Building dependency tree... Done"); const bar = document.getElementById('ubuntu-progress-bar'); if (bar) bar.style.width = "75%"; } },
-    { time: 18500, action: () => writeTerminalLineImmediate("Installing aegis-native-host (1.0.4)... Done.") },
+    { time: 18500, action: () => writeTerminalLineImmediate("Installing aegis-host (1.0.4)... Done.") },
     { time: 19500, action: () => { const bar = document.getElementById('ubuntu-progress-bar'); const btnUbuntu = document.getElementById('btn-ubuntu-install-sim'); if (bar) bar.style.width = "100%"; if (btnUbuntu) { btnUbuntu.textContent = pageLang === 'tr' ? "Kaldır" : "Remove"; btnUbuntu.style.background = "#333"; } } },
     { time: 20000, action: () => writeTerminalLineImmediate("user@aegis:~$ ") },
     // 13. Close native windows -> Toolbar green, login card ready
