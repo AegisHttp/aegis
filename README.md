@@ -4,7 +4,7 @@ This repository serves as the central documentation landing page for the **Aegis
 
 👉 **View the live interactive website here:** [Aegis HTTP Gateway Documentation](https://aegishttp.github.io/)
 
-[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/lappbcambkogfmigiphapgjcglafcfnd?style=for-the-badge&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/lappbcambkogfmigiphapgjcglafcfnd)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/lappbcambkogfmigiphapgjcglafcfnd?style=for-the-badge&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/lappbcambkogfmigiphapgjcglafcfnd) [![Mozilla Add-on](https://img.shields.io/amo/v/aegis-http-gpg-login?style=for-the-badge&logo=mozilla-firefox&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/aegis-http-gpg-login/)
 
 ---
 
